@@ -234,7 +234,7 @@ def main():
     import os
     from google.oauth2 import service_account
 
-    credentials = service_account.Credentials.from_service_account_file("/Users/suyeol/Downloads/eazel-282111-e7edd9afef7f.json")
+    credentials = service_account.Credentials.from_service_account_file("your_gcp_credential_json_path")
 
     client = speech.SpeechClient(credentials=credentials)
     config = speech.types.RecognitionConfig(
